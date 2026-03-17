@@ -124,7 +124,7 @@
     },
     "gitee": {
       "url": "https://github.com/yulgnier",
-      "show": true,
+      "show": false,
       "title": {
         "zh": "Gitee",
         "en": "Gitee"
@@ -146,81 +146,7 @@
     }
   },
   "projects": {
-    "featured": [
-      {
-        "id": "vibe-music-server",
-        "name": "Vibe Music Server",
-        "description": {
-          "zh": "基于 Spring Boot 3 的高性能音乐服务后端系统，支持高并发访问、MinIO 分布式存储、Redis 智能缓存",
-          "en": "High-performance music service backend based on Spring Boot 3, supporting high concurrency, MinIO distributed storage, and Redis intelligent caching"
-        },
-        "url": "https://github.com/AmisKwok/vibe-music-server",
-        "image": "/images/index3.jpg",
-        "tags": [
-          "Spring Boot",
-          "Java",
-          "MySQL",
-          "Redis",
-          "MinIO"
-        ],
-        "icon": "fas fa-server",
-        "gradient": "from-blue-500 to-purple-600"
-      },
-      {
-        "id": "vibe-music-app",
-        "name": "Vibe Music App",
-        "description": {
-          "zh": "基于 Flutter 的跨平台音乐播放器，支持 Android、iOS、Web 和桌面端",
-          "en": "Cross-platform music player based on Flutter, supporting Android, iOS, Web, and desktop"
-        },
-        "url": "https://github.com/AmisKwok/vibe-music-app",
-        "image": "/images/index2.jpg",
-        "tags": [
-          "Flutter",
-          "Dart",
-          "GetX",
-          "Material Design"
-        ],
-        "icon": "fas fa-music",
-        "gradient": "from-pink-500 to-rose-600"
-      },
-      {
-        "id": "amis-homepage",
-        "name": "Amis's Homepage",
-        "description": {
-          "zh": "个人主页项目，支持亮色/暗色主题切换、多语言、动态背景效果",
-          "en": "Personal homepage with light/dark theme switching, multi-language support, and dynamic backgrounds"
-        },
-        "url": "https://github.com/AmisKwok/AmisHomepage",
-        "image": "/images/index5.jpg",
-        "tags": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "React"
-        ],
-        "icon": "fas fa-home",
-        "gradient": "from-violet-500 to-purple-600"
-      },
-      {
-        "id": "amis-blog-demo",
-        "name": "Amis's Blog Demo",
-        "description": {
-          "zh": "个人博客系统，支持 Markdown 编辑、图片管理、项目展示等功能",
-          "en": "Personal blog system with Markdown editing, image management, and project showcase"
-        },
-        "url": "https://github.com/AmisKwok/amis-s-blog-demo",
-        "image": "/images/index6.jpg",
-        "tags": [
-          "Next.js",
-          "React",
-          "Markdown",
-          "Tailwind CSS"
-        ],
-        "icon": "fas fa-blog",
-        "gradient": "from-emerald-500 to-teal-600"
-      }
-    ],
+    "featured": [],
     "moreProjectsUrl": "https://github.com/yulgnier"
   },
   "skills": [
@@ -237,18 +163,6 @@
       "icon": "fas fa-leaf"
     },
     {
-      "name": "Flutter",
-      "level": 80,
-      "color": "from-blue-500 to-cyan-600",
-      "icon": "fas fa-mobile-alt"
-    },
-    {
-      "name": "Next.js",
-      "level": 75,
-      "color": "from-gray-700 to-gray-900",
-      "icon": "fas fa-bolt"
-    },
-    {
       "name": "MySQL",
       "level": 85,
       "color": "from-blue-600 to-blue-800",
@@ -262,15 +176,9 @@
     },
     {
       "name": "TypeScript",
-      "level": 70,
+      "level": 10,
       "color": "from-blue-600 to-indigo-700",
       "icon": "fab fa-js"
-    },
-    {
-      "name": "React",
-      "level": 70,
-      "color": "from-cyan-500 to-blue-600",
-      "icon": "fab fa-react"
     }
   ],
   "techStack": {
@@ -360,11 +268,5 @@
       "viewProject": "View Project",
       "moreProjects": "More Projects"
     }
-  },
-  "musicOrder": {
-    "灰与幻想的格林姆迦尔.mp3": 0,
-    "传说之下---His Theme.mp3": 1,
-    "柚木家的四兄弟.mp3": 2,
-    "Just Say Hello.mp3": 3
   }
 }
