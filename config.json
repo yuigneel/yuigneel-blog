@@ -1,0 +1,237 @@
+{
+  "showSkills": true,
+  "showProjects": true,
+  "showLocalTime": true,
+  "showCustomCursor": true,
+  "customCursorPath": "/cursors/watermelon.cur",
+  "site": {
+    "name": "yulgnier's Homepage",
+    "title": "yulgnier's Homepage",
+    "url": "https://your-domain.com",
+    "ogImage": "/images/index.jpg",
+    "backgroundImage": {
+      "dark": "/images/index.jpg",
+      "light": "/images/index4.jpg"
+    },
+    "textColor": {
+      "dark": "#ffffff",
+      "light": "#1f2937"
+    },
+    "textSecondaryColor": {
+      "dark": "rgba(255, 255, 255, 0.9)",
+      "light": "rgba(31, 41, 55, 0.9)"
+    },
+    "author": "yulgnier",
+    "description": {
+      "zh": "后端开发者 | 热爱编程，追求极致，永不止步。",
+      "en": "Backend Developer | Passionate about coding, pursuing excellence, never stopping."
+    },
+    "keywords": [
+      "yulgnier",
+      "个人主页",
+      "博客",
+      "技术",
+      "Java",
+      "Spring Boot"
+    ],
+    "footer": {
+      "zh": "© 2026 伊格尼尔·羽的个人主页. All Rights Reserved.",
+      "en": "© 2026 yulgnier's Personal Homepage. All Rights Reserved."
+    }
+  },
+  "profile": {
+    "name": "yulgnier",
+    "avatar": "/images/avatar.jpg",
+    "location": {
+      "zh": "中国 🇨🇳",
+      "en": "China 🇨🇳"
+    },
+    "focus": {
+      "zh": "后端",
+      "en": "Backend"
+    },
+    "hobbies": {
+      "zh": "编程、学习、开源",
+      "en": "Coding, Learning, Open Source"
+    },
+    "motto": {
+      "zh": "顺其自然",
+      "en": "In nature, I am"
+    },
+    "typeWriterTexts": {
+      "zh": [
+        "你好代码，你好世界",
+        "记录生活，分享技术，追求极致，永不止步"
+      ],
+      "en": [
+        "Hello Code, Hello World",
+        "Record life, share technology, pursuing excellence, never stopping"
+      ]
+    },
+    "currentFocus": [
+      {
+        "icon": "fas fa-satellite text-blue-400",
+        "text": {
+          "zh": "正在专注于后端服务",
+          "en": "Working on Backend Services"
+        }
+      },
+      {
+        "icon": "fas fa-seedling text-green-400",
+        "text": {
+          "zh": "正在学习云原生与微服务架构",
+          "en": "Learning Cloud Native & Microservices"
+        }
+      },
+      {
+        "icon": "fas fa-comments text-yellow-400",
+        "text": {
+          "zh": "欢迎交流 Java、后端开发",
+          "en": "Ask me about Java, Backend Dev"
+        }
+      }
+    ]
+  },
+  "links": {
+    "blog": {
+      "url": "https://your-domain.com",
+      "show": true,
+      "title": {
+        "zh": "伊格尼尔·羽的博客",
+        "en": "yulgnier's Blog"
+      },
+      "description": {
+        "zh": "记录生活，分享技术",
+        "en": "Record life, share technology"
+      },
+      "icon": "fas fa-blog"
+    },
+    "github": {
+      "url": "https://github.com/yulgnier",
+      "show": true,
+      "title": {
+        "zh": "GitHub",
+        "en": "GitHub"
+      },
+      "description": {
+        "zh": "开源项目和代码仓库",
+        "en": "Open source projects and code repositories"
+      },
+      "icon": "fab fa-github"
+    },
+    "email": {
+      "url": "mailto:yulgnier@gmail.com",
+      "show": true,
+      "title": {
+        "zh": "邮箱",
+        "en": "Email"
+      },
+      "icon": "fas fa-envelope"
+    }
+  },
+  "projects": {
+    "featured": [
+    ],
+    "moreProjectsUrl": "https://github.com/yulgnier"
+  },
+  "skills": [
+    {
+      "name": "Java",
+      "level": 90,
+      "color": "from-orange-500 to-red-500",
+      "icon": "fab fa-java"
+    },
+    {
+      "name": "Spring Boot",
+      "level": 85,
+      "color": "from-green-500 to-emerald-600",
+      "icon": "fas fa-leaf"
+    },
+    {
+      "name": "MySQL",
+      "level": 85,
+      "color": "from-blue-600 to-blue-800",
+      "icon": "fas fa-database"
+    },
+    {
+      "name": "Redis",
+      "level": 75,
+      "color": "from-red-500 to-red-700",
+      "icon": "fas fa-bolt"
+    },
+    {
+      "name": "TypeScript",
+      "level": 70,
+      "color": "from-blue-600 to-indigo-700",
+      "icon": "fab fa-js"
+    }
+  ],
+  "techStack": {
+    "backend": [
+      {
+        "name": "Java",
+        "color": "bg-orange-500",
+        "icon": "fab fa-java"
+      },
+      {
+        "name": "Spring Boot",
+        "color": "bg-green-600",
+        "icon": "fas fa-leaf"
+      },
+      {
+        "name": "MySQL",
+        "color": "bg-blue-600",
+        "icon": "fas fa-database"
+      },
+      {
+        "name": "Redis",
+        "color": "bg-red-500",
+        "icon": "fas fa-bolt"
+      }
+    ],
+    "mobile": [
+      {
+        "name": "None",
+        "color": "bg-green-500",
+        "icon": "fab fa-android"
+      }
+    ],
+    "frontend": [
+      {
+        "name": "TypeScript",
+        "color": "bg-blue-600",
+        "icon": "fab fa-js"
+      }
+    ]
+  },
+  "translations": {
+    "zh": {
+      "siteTitle": "yulgnier的主页",
+      "quickLinks": "快速链接",
+      "aboutMe": "关于我",
+      "techStack": "技术栈",
+      "backend": "后端",
+      "mobile": "移动端",
+      "frontend": "前端",
+      "currentFocus": "当前关注",
+      "featuredProjects": "精选项目",
+      "skills": "技能",
+      "viewProject": "查看项目",
+      "moreProjects": "更多项目"
+    },
+    "en": {
+      "siteTitle": "yulgnier's Homepage",
+      "quickLinks": "Quick Links",
+      "aboutMe": "About Me",
+      "techStack": "Tech Stack",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "frontend": "Frontend",
+      "currentFocus": "Current Focus",
+      "featuredProjects": "Featured Projects",
+      "skills": "Skills",
+      "viewProject": "View Project",
+      "moreProjects": "More Projects"
+    }
+  }
+}

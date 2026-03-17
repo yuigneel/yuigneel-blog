@@ -1,0 +1,89 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import { useTheme } from "../contexts/ThemeContext";
+import { getThemeColors } from "../config/themeConfig";
+import { useConfigStore } from "../(home)/stores/config-store";
+
+type Section = "about" | "projects" | "skills";
+
+export default function MobileNav() {
+  const { t } = useLanguage();
+  const { theme } = useTheme();
+  const colors = getThemeColors(theme);
+  const { siteContent } = useConfigStore();
+  const [currentSection, setCurrentSection] = useState<Section>("projects");
+  const [isVisible, setIsVisible] = useState(false);
+  const isScrollingRef = useRef(false);
+
+  const sections: { id: Section; icon: string }[] = [
+    ...(siteContent?.showProjects !== false ? [{ id: "projects" as Section, icon: "fas fa-star" }] : []),
+    { id: "about" as Section, icon: "fas fa-user" },
+    ...(siteContent?.showSkills !== false ? [{ id: "skills" as Section, icon: "fas fa-chart-line" }] : []),
+  ];
+
+  const scrollToSection = (sectionId: Section) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      isScrollingRef.current = true;
+      setCurrentSection(sectionId);
+      section.scrollIntoView({ behavior: "smooth" });
+      
+      setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 1000);
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isScrollingRef.current) return;
+
+      const sectionIds = sections.map(s => s.id);
+      for (const sectionId of sectionIds) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2;
+          if (isVisible) {
+            setCurrentSection(sectionId as Section);
+            break;
+          }
+        }
+      }
+
+      const scrollY = window.scrollY;
+      setIsVisible(scrollY > window.innerHeight * 0.5);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [t, sections]);
+
+  return (
+    <div className={`fixed bottom-4 left-4 z-40 md:hidden transition-all duration-300 ${
+      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+    }`}>
+      <div className="flex flex-col gap-2">
+        {sections.map((section) => (
+          <button
+            key={section.id}
+            onClick={() => scrollToSection(section.id)}
+            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-md ${
+              currentSection === section.id
+                ? "bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg scale-110"
+                : theme === "dark"
+                  ? "bg-white/10 hover:bg-white/20 backdrop-blur-sm"
+                  : "bg-white hover:bg-gray-50 border border-gray-200 shadow-lg"
+            }`}
+            title={section.id}
+          >
+            <i className={`${section.icon} ${currentSection === section.id ? "text-white" : theme === "dark" ? "text-white" : "text-gray-600"} text-sm`}></i>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
