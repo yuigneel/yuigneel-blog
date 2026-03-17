@@ -281,7 +281,7 @@ export default function Home() {
                 <i className="fab fa-github"></i>
               </a>
             )}
-            {linksConfig.gitee && linksConfig.gitee.show !== false && (
+            {linksConfig.gitee?.show !== false && (
               <a 
                 href={linksConfig.gitee.url}
                 target="_blank" 
