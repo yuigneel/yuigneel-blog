@@ -7,7 +7,7 @@
   "site": {
     "name": "yulgnier's Homepage",
     "title": "yulgnier's Homepage",
-    "url": "https://your-domain.com",
+    "url": "https://amis-homepage-main-git-master-yulgniers-projects.vercel.app",
     "ogImage": "/images/index.jpg",
     "backgroundImage": {
       "dark": "/images/index.jpg",
@@ -127,11 +127,21 @@
         "en": "Email"
       },
       "icon": "fas fa-envelope"
+    },
+    "gitee": {
+      "url": "https://github.com/yulgnier",
+      "title": {
+        "zh": "测试",
+        "en": "test"
+      },
+      "description": {
+        "zh": "测试",
+        "en": "test"
+      }
     }
   },
   "projects": {
-    "featured": [
-    ],
+    "featured": [],
     "moreProjectsUrl": "https://github.com/yulgnier"
   },
   "skills": [
