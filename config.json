@@ -179,6 +179,12 @@
       "level": 10,
       "color": "from-blue-600 to-indigo-700",
       "icon": "fab fa-js"
+    },
+    {
+      "name": "MyBatis(MyBatisPlus)",
+      "level": 70,
+      "color": "from-blue-500 to-purple-600",
+      "icon": "fas fa-star"
     }
   ],
   "techStack": {
