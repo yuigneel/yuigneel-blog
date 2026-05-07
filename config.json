@@ -2,7 +2,7 @@
   "showSkills": true,
   "showProjects": true,
   "showLocalTime": true,
-  "showCustomCursor": true,
+  "showCustomCursor": false,
   "customCursorPath": "/cursors/watermelon.cur",
   "site": {
     "name": "yuigneel's Homepage",
