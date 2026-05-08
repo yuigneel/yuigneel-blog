@@ -1,13 +1,13 @@
 {
   "showSkills": true,
   "showProjects": true,
-  "showLocalTime": false,
-  "showCustomCursor": false,
+  "showLocalTime": true,
+  "showCustomCursor": true,
   "customCursorPath": "/cursors/watermelon.cur",
   "site": {
     "name": "yuigneel's Homepage",
     "title": "yuigneel's Homepage",
-    "url": "https://yuigneel-blog.vercel.app",
+    "url": "https://amis-homepage-main-git-master-yulgniers-projects.vercel.app",
     "ogImage": "/images/index.jpg",
     "backgroundImage": {
       "dark": "/images/index.jpg",
@@ -15,13 +15,13 @@
     },
     "textColor": {
       "dark": "#ffffff",
-      "light": "#f3e58c"
+      "light": "#1f2937"
     },
     "textSecondaryColor": {
       "dark": "rgba(255, 255, 255, 0.9)",
       "light": "rgba(31, 41, 55, 0.9)"
     },
-    "author": "yuigneel",
+    "author": "yulgnier",
     "description": {
       "zh": "后端开发者 | 热爱编程，追求极致，永不止步。",
       "en": "Backend Developer | Passionate about coding, pursuing excellence, never stopping."
@@ -39,11 +39,11 @@
     ],
     "footer": {
       "zh": "© 2026 伊格尼尔·羽的个人主页. All Rights Reserved.",
-      "en": "© 2026 yuigneel's Personal Homepage. All Rights Reserved."
+      "en": "© 2026 yulgnier's Personal Homepage. All Rights Reserved."
     }
   },
   "profile": {
-    "name": "yuigneel",
+    "name": "yulgnier",
     "avatar": "/images/avatar.jpg",
     "location": {
       "zh": "中国 🇨🇳",
@@ -97,11 +97,11 @@
   },
   "links": {
     "blog": {
-      "url": "https://yuigneel-blog.vercel.app",
+      "url": "https://amis-homepage-main-git-master-yulgniers-projects.vercel.app",
       "show": true,
       "title": {
         "zh": "伊格尼尔·羽的博客",
-        "en": "yuigneel's Blog"
+        "en": "yulgnier's Blog"
       },
       "description": {
         "zh": "记录生活，分享技术",
@@ -110,7 +110,7 @@
       "icon": "fas fa-blog"
     },
     "github": {
-      "url": "https://github.com/yuigneel",
+      "url": "https://github.com/yulgnier",
       "show": true,
       "title": {
         "zh": "GitHub",
@@ -123,7 +123,7 @@
       "icon": "fab fa-github"
     },
     "gitee": {
-      "url": "https://github.com/yuigneel",
+      "url": "https://github.com/yulgnier",
       "show": false,
       "title": {
         "zh": "Gitee",
@@ -136,7 +136,7 @@
       "icon": "fas fa-code-branch"
     },
     "email": {
-      "url": "mailto:yuigneel@outlook.com",
+      "url": "mailto:yulgnier@gmail.com",
       "show": true,
       "title": {
         "zh": "邮箱",
