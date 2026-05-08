@@ -1,9 +1,19 @@
-import { NextRequest, NextResponse } from 'next/server';
+/**
+ * 配置读取 API
+ * GET /api/config
+ * 从 config.json 读取站点配置
+ */
+import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 
-export async function GET(request: NextRequest) {
+/**
+ * 获取站点配置
+ * @returns 配置 JSON 数据
+ */
+export async function GET() {
   try {
+    // 读取项目根目录下的 config.json
     const configPath = path.join(process.cwd(), 'config.json');
     const configContent = await fs.readFile(configPath, 'utf8');
     const config = JSON.parse(configContent);

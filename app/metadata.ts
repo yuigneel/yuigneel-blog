@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { siteConfig } from "./config";
+import { siteConfig } from "./site-config";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -57,9 +57,6 @@ export const metadata: Metadata = {
     description: siteConfig.description.zh,
     images: [siteConfig.ogImage],
     creator: "@AmisKwok",
-  },
-  verification: {
-    google: "your-google-verification-code",
   },
 };
 

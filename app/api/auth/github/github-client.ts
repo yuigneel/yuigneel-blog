@@ -1,38 +1,22 @@
 /**
- * GitHub 客户端工具
- * 用于与 GitHub API 交互，处理认证、文件操作和 Git 操作
+ * GitHub App 客户端工具
+ * 
+ * 提供 GitHub API 认证和文件操作功能：
+ * - JWT 签名和认证
+ * - 获取安装令牌
+ * - 文件读写删除
+ * - Git 操作（树、提交、引用）
+ * 
+ * 使用 jsrsasign 库进行 RSA 签名
+ * 支持通过 GitHub App 进行仓库操作
  */
-'use client'
-
-import { useAuthStore } from '@/hooks/use-auth'
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { KJUR, KEYUTIL } from 'jsrsasign'
-import { toast } from 'sonner'
 
 /**
  * GitHub API 基础 URL
  */
 export const GH_API = 'https://api.github.com'
-
-/**
- * 处理 401 错误
- * 清除认证状态
- */
-function handle401Error(): void {
-	if (typeof sessionStorage === 'undefined') return
-	try {
-		useAuthStore.getState().clearAuth()
-	} catch (error) {
-		console.error('Failed to clear auth cache:', error)
-	}
-}
-
-/**
- * 处理 422 错误
- * 显示操作过快的提示
- */
-function handle422Error(): void {
-	toast.error('操作太快了，请操作慢一点')
-}
 
 /**
  * 将字符串转换为 Base64 UTF-8 编码
@@ -72,8 +56,6 @@ export async function getInstallationId(jwt: string, owner: string, repo: string
 			'X-GitHub-Api-Version': '2022-11-28'
 		}
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`installation lookup failed: ${res.status}`)
 	const data = await res.json()
 	return data.id
@@ -94,8 +76,6 @@ export async function createInstallationToken(jwt: string, installationId: numbe
 			'X-GitHub-Api-Version': '2022-11-28'
 		}
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`create token failed: ${res.status}`)
 	const data = await res.json()
 	return data.token as string
@@ -118,8 +98,6 @@ export async function getFileSha(token: string, owner: string, repo: string, pat
 			'X-GitHub-Api-Version': '2022-11-28'
 		}
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (res.status === 404) return undefined
 	if (!res.ok) throw new Error(`get file sha failed: ${res.status}`)
 	const data = await res.json()
@@ -149,13 +127,9 @@ export async function putFile(token: string, owner: string, repo: string, path: 
 		},
 		body: JSON.stringify({ message, content: contentBase64, branch, ...(sha ? { sha } : {}) })
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`put file failed: ${res.status}`)
 	return res.json()
 }
-
-// Batch commit APIs
 
 /**
  * 获取 Git 引用
@@ -173,8 +147,6 @@ export async function getRef(token: string, owner: string, repo: string, ref: st
 			'X-GitHub-Api-Version': '2022-11-28'
 		}
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`get ref failed: ${res.status}`)
 	const data = await res.json()
 	return { sha: data.object.sha }
@@ -184,11 +156,11 @@ export async function getRef(token: string, owner: string, repo: string, ref: st
  * Git 树项接口
  */
 export type TreeItem = {
-	path: string // 文件路径
-	mode: '100644' | '100755' | '040000' | '160000' | '120000' // 文件模式
-	type: 'blob' | 'tree' | 'commit' // 项类型
-	content?: string // 文件内容
-	sha?: string | null // 文件 SHA 值
+	path: string
+	mode: '100644' | '100755' | '040000' | '160000' | '120000'
+	type: 'blob' | 'tree' | 'commit'
+	content?: string
+	sha?: string | null
 }
 
 /**
@@ -211,8 +183,6 @@ export async function createTree(token: string, owner: string, repo: string, tre
 		},
 		body: JSON.stringify({ tree, base_tree: baseTree })
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`create tree failed: ${res.status}`)
 	const data = await res.json()
 	return { sha: data.sha }
@@ -239,8 +209,6 @@ export async function createCommit(token: string, owner: string, repo: string, m
 		},
 		body: JSON.stringify({ message, tree, parents })
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`create commit failed: ${res.status}`)
 	const data = await res.json()
 	return { sha: data.sha }
@@ -266,8 +234,6 @@ export async function updateRef(token: string, owner: string, repo: string, ref:
 		},
 		body: JSON.stringify({ sha, force })
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`update ref failed: ${res.status}`)
 }
 
@@ -288,8 +254,6 @@ export async function readTextFileFromRepo(token: string, owner: string, repo: s
 			'X-GitHub-Api-Version': '2022-11-28'
 		}
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (res.status === 404) return null
 	if (!res.ok) throw new Error(`read file failed: ${res.status}`)
 	const data: any = await res.json()
@@ -319,8 +283,6 @@ export async function listRepoFilesRecursive(token: string, owner: string, repo:
 				'X-GitHub-Api-Version': '2022-11-28'
 			}
 		})
-		if (res.status === 401) handle401Error()
-		if (res.status === 422) handle422Error()
 		if (res.status === 404) return []
 		if (!res.ok) throw new Error(`read directory failed: ${res.status}`)
 		const data: any = await res.json()
@@ -370,9 +332,28 @@ export async function createBlob(
 		},
 		body: JSON.stringify({ content, encoding })
 	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
 	if (!res.ok) throw new Error(`create blob failed: ${res.status}`)
 	const data = await res.json()
 	return { sha: data.sha }
+}
+
+/**
+ * 删除文件
+ */
+export async function deleteFile(token: string, owner: string, repo: string, path: string, message: string, branch: string) {
+	const sha = await getFileSha(token, owner, repo, path, branch)
+	if (!sha) return
+	
+	const res = await fetch(`${GH_API}/repos/${owner}/${repo}/contents/${encodeURIComponent(path)}`, {
+		method: 'DELETE',
+		headers: {
+			Authorization: `Bearer ${token}`,
+			Accept: 'application/vnd.github+json',
+			'X-GitHub-Api-Version': '2022-11-28',
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify({ message, sha, branch })
+	})
+	if (!res.ok) throw new Error(`delete file failed: ${res.status}`)
+	return res.json()
 }

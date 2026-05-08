@@ -4,23 +4,25 @@
 
 ## 在线预览
 
-🌐 [https://www.amisweb.cn](https://www.amisweb.cn)
+🌐 <https://www.amisweb.cn>
 
 ## 功能特性
 
 - 🎨 **现代化设计** - 全屏背景图 + 渐变遮罩 + 动态背景（暗色：星空，亮色：落叶）
 - ✍️ **SVG 绘画标题** - 手写风格标题，动态计算 viewBox
 - ⌨️ **打字机效果** - 动态打字机文字效果，支持多文本循环
-- 👤 **头像动画** - 呼吸光圈效果，悬停放大
-- 🔗 **社交链接** - 背景图中心展示 Email、GitHub、Gitee、Blog 等社交链接
-- 📋 **关于我卡片** - 从 GitHub README 加载个人信息
-- 🌟 **精选项目** - 展示 Vibe Music Server 和 App 等项目，图片悬停放大效果
+  - 🎭 **故障效果** - 可配置的故障抖动动画，支持自定义触发概率和间隔
+  - 🌈 **颜色渐变** - 动态彩色渐变效果（仅暗色主题）
+- 👤 **头像动画** - 呼吸光圈效果 + 悬停放大 + 多层光晕
+- 🔗 **社交链接** - 背景图中心展示社交链接，带涟漪点击效果和悬停光晕
+- 📋 **关于我卡片** - 从 GitHub README 加载个人信息，技能标签悬停效果
+- 🌟 **精选项目** - 展示项目卡片，支持边框流光、阴影扩散、图片遮罩动画
 - 📊 **技能可视化** - 进度条展示技术栈，数字动画效果
 - 🌍 **多语言支持** - 支持中文/英文切换，自动检测系统语言
 - 🌓 **主题切换** - 支持亮色/暗色模式切换，默认暗色主题，模糊过渡动画，主题适配所有组件
 - 🕐 **时间组件** - 左上角显示本地时间和日期，点击展开日历，平滑宽度过渡动画
--  ️ **自定义鼠标指针** - 支持自定义鼠标指针样式，可上传 .cur 文件
--   **响应式布局** - 完美适配桌面端和移动端
+- 🖱️ **自定义鼠标指针** - 支持自定义鼠标指针样式，可上传 .cur 文件
+- 📱 **响应式布局** - 完美适配桌面端和移动端
 - 🎬 **滚动动画** - 各卡片的淡入/滑入效果
 - 🧭 **桌面端导航** - 右上角导航链接到精选项目、关于我、技能，右侧侧边导航
 - 📱 **移动端导航** - 移动端左下角简洁的圆形导航按钮
@@ -28,6 +30,8 @@
 - 🔝 **返回顶部** - 滚动时显示返回顶部按钮
 - 🔧 **在线配置管理** - 可视化配置界面，无需编辑代码，自动同步到 GitHub
 - 🎵 **全局音乐播放器** - 支持播放/暂停、上一首/下一首、循环模式切换，可展开/收起，支持音乐列表管理
+- 💬 **留言板** - 集成 Waline 评论系统，支持访客留言
+- 🔗 **友链页面** - 展示友情链接，自动获取网站图标和名称
 
 ## 技术栈
 
@@ -36,7 +40,7 @@
 - [Tailwind CSS](https://tailwindcss.com/) - 原子化 CSS
 - [Font Awesome](https://fontawesome.com/) - 图标库
 
----
+***
 
 ## 🚀 小白快速上手指南
 
@@ -165,19 +169,33 @@
 
 将以下图片放入 `public/images/` 目录：
 
-| 文件名 | 用途 | 建议尺寸 |
-|--------|------|----------|
-| `avatar.jpg` | 头像 | 512x512 |
-| `index.jpg` | 暗色背景图 | 1920x1080 |
-| `index4.jpg` | 亮色背景图 | 1920x1080 |
-| `icon.png` | 网站图标 | 512x512 |
-| `index2.jpg` ~ `index9.jpg` | 项目展示图 | 1200x630 |
+| 文件名                          | 用途    | 建议尺寸      |
+| ---------------------------- | ----- | --------- |
+| `avatar.jpg`                 | 头像    | 512x512   |
+| `index.jpg`                  | 暗色背景图 | 1920x1080 |
+| `index4.jpg`                 | 亮色背景图 | 1920x1080 |
+| `icon.png`                   | 网站图标  | 512x512   |
+| `index2.jpg` \~ `index9.jpg` | 项目展示图 | 1200x630  |
 
 ### 第五步：添加音乐（可选）
 
 将音乐文件放入 `public/music/` 目录，支持 `.mp3`、`.wav`、`.ogg` 格式。
 
 也可以在配置页面的音乐管理中进行上传、删除和排序操作。
+
+### 第六步：配置留言板（可选）
+
+1. 部署 [Waline](https://waline.js.org/) 评论系统
+2. 在配置页面的留言板设置中填入 Waline 服务地址
+3. 启用留言板功能
+
+### 第七步：配置友链（可选）
+
+在配置页面的友链设置中：
+1. 启用友链功能
+2. 添加友情链接 URL
+3. 系统自动获取网站图标和名称
+4. 支持手动编辑友链信息
 
 ### 第四步：运行项目
 
@@ -189,9 +207,9 @@ npm install
 npm run dev
 ```
 
-访问 http://localhost:9998 即可预览！
+访问 <http://localhost:9998> 即可预览！
 
----
+***
 
 ## 配置详解
 
@@ -226,6 +244,17 @@ config.json
 │   ├── backend       # 后端技术
 │   ├── mobile        # 移动端技术
 │   └── frontend      # 前端技术
+├── guestbook         # 留言板配置
+│   ├── enabled       # 是否启用
+│   └── walineUrl     # Waline 服务地址
+├── friendLinks       # 友链配置
+│   ├── enabled       # 是否启用
+│   └── links         # 友链列表
+├── typeWriterEffects # 打字机效果配置
+│   ├── glitchEffect  # 故障效果开关
+│   ├── colorGradient # 颜色渐变开关
+│   ├── glitchProbability # 故障触发概率 (0-100%)
+│   └── glitchInterval    # 故障触发间隔 (毫秒)
 └── translations      # 多语言文本
 ```
 
@@ -233,35 +262,35 @@ config.json
 
 本项目使用 [Font Awesome](https://fontawesome.com/icons) 图标库，常用图标：
 
-| 用途 | 图标代码 |
-|------|----------|
-| 博客 | `fas fa-blog` |
-| GitHub | `fab fa-github` |
-| 邮箱 | `fas fa-envelope` |
-| 数据库 | `fas fa-database` |
-| 服务器 | `fas fa-server` |
-| 手机 | `fas fa-mobile-alt` |
-| 代码 | `fas fa-code` |
-| 音乐 | `fas fa-music` |
-| 首页 | `fas fa-home` |
-| Java | `fab fa-java` |
-| React | `fab fa-react` |
-| JS | `fab fa-js` |
-| Android | `fab fa-android` |
+| 用途      | 图标代码                |
+| ------- | ------------------- |
+| 博客      | `fas fa-blog`       |
+| GitHub  | `fab fa-github`     |
+| 邮箱      | `fas fa-envelope`   |
+| 数据库     | `fas fa-database`   |
+| 服务器     | `fas fa-server`     |
+| 手机      | `fas fa-mobile-alt` |
+| 代码      | `fas fa-code`       |
+| 音乐      | `fas fa-music`      |
+| 首页      | `fas fa-home`       |
+| Java    | `fab fa-java`       |
+| React   | `fab fa-react`      |
+| JS      | `fab fa-js`         |
+| Android | `fab fa-android`    |
 
 ### 渐变色说明
 
 项目卡片使用 Tailwind CSS 渐变色，常用组合：
 
-| 渐变色代码 | 效果 |
-|------------|------|
-| `from-blue-500 to-purple-600` | 蓝紫渐变 |
-| `from-pink-500 to-rose-600` | 粉红渐变 |
+| 渐变色代码                          | 效果   |
+| ------------------------------ | ---- |
+| `from-blue-500 to-purple-600`  | 蓝紫渐变 |
+| `from-pink-500 to-rose-600`    | 粉红渐变 |
 | `from-emerald-500 to-teal-600` | 绿青渐变 |
-| `from-orange-500 to-red-500` | 橙红渐变 |
-| `from-cyan-500 to-blue-600` | 青蓝渐变 |
+| `from-orange-500 to-red-500`   | 橙红渐变 |
+| `from-cyan-500 to-blue-600`    | 青蓝渐变 |
 
----
+***
 
 ## 项目结构
 
@@ -270,16 +299,33 @@ config.json
 ├── config.json             # 📝 主配置文件（用户编辑）
 ├── config.example.json     # 📋 配置示例模板
 ├── app/
-│   ├── components/         # 组件
-│   ├── contexts/           # React Context
+│   ├── admin/              # 管理后台页面
+│   ├── api/                # API 路由
+│   ├── guestbook/          # 留言板页面
+│   ├── friends/            # 友链页面
+│   ├── components/         # 组件（按功能分类）
+│   │   ├── ui/             # UI 控件（开关、语言切换等）
+│   │   ├── layout/         # 布局组件（导航等）
+│   │   ├── content/        # 内容组件（项目、技能、关于等）
+│   │   ├── media/          # 媒体组件（音乐播放器、头像等）
+│   │   └── effects/        # 效果组件（背景、动画等）
 │   ├── hooks/              # 自定义 Hooks
-│   ├── config.ts           # 配置读取（自动）
+│   ├── stores/             # Zustand 状态管理
+│   ├── scripts/            # 脚本文件
+│   ├── site-config.ts      # 站点配置读取
+│   ├── themeConfig.ts      # 主题配置
 │   ├── globals.css         # 全局样式
 │   ├── layout.tsx          # 根布局
 │   ├── metadata.ts         # SEO 元数据
 │   └── page.tsx            # 首页
+├── types/                  # TypeScript 类型定义
+│   ├── config.ts           # 配置相关类型
+│   ├── theme.ts            # 主题相关类型
+│   ├── store.ts            # Store 相关类型
+│   └── api.ts              # API 相关类型
 ├── public/
 │   ├── images/             # 图片资源
+│   ├── music/              # 音乐文件
 │   ├── markdown/           # Markdown 文件
 │   └── robots.txt          # 爬虫规则
 ├── .env.example            # 环境变量示例
@@ -288,7 +334,7 @@ config.json
 └── package.json
 ```
 
----
+***
 
 ## 部署教程
 
@@ -298,43 +344,37 @@ config.json
 
 1. **Fork 本项目**
    - 点击右上角 `Fork` 按钮
-
 2. **登录 Vercel**
    - 访问 [vercel.com](https://vercel.com/)
    - 使用 GitHub 登录
-
 3. **配置环境变量（重要！）**
-   
+
    在 Vercel 部署前，需要先配置以下环境变量：
-   
    - 进入 Vercel 控制台
    - 选择你的项目 → **Settings** → **Environment Variables**
    - 添加以下变量：
-
-   | 变量名 | 说明 | 示例 |
-   |--------|------|------|
-   | `GITHUB_APP_ID` | GitHub App ID | `123456` |
-   | `GITHUB_REPO_OWNER` | 仓库所有者 | `yourusername` |
-   | `GITHUB_REPO_NAME` | 仓库名称 | `AmisHomepage` |
-   | `GITHUB_REPO_BRANCH` | 分支名称 | `main` |
-   | `ENCRYPTION_KEY` | 加密密钥（用于加密存储的私钥） | `随机生成的32字节十六进制字符串` |
-
+     \| 变量名                  | 说明              | 示例                 |
+     \| -------------------- | --------------- | ------------------ |
+     \| `GITHUB_APP_ID`      | GitHub App ID   | `123456`           |
+     \| `GITHUB_REPO_OWNER`  | 仓库所有者           | `yourusername`     |
+     \| `GITHUB_REPO_NAME`   | 仓库名称            | `AmisHomepage`     |
+     \| `GITHUB_REPO_BRANCH` | 分支名称            | `main`             |
+     \| `ENCRYPTION_KEY`     | 加密密钥（用于加密存储的私钥） | `随机生成的32字节十六进制字符串` |
    > ⚠️ **注意**：`.env` 文件不会被上传到 GitHub，所以必须在 Vercel 控制台手动配置这些环境变量！
-   > 
+   >
    > 💡 **生成加密密钥**：可以使用以下命令生成安全的随机密钥：
+   >
    > ```bash
    > node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
    > ```
-
 4. **导入项目**
    - 点击 `New Project`
    - 选择你 Fork 的仓库
    - 点击 `Deploy`
-
 5. **绑定域名（可选）**
    - 在项目设置中添加自定义域名
 
----
+***
 
 ## 🔧 在线配置管理（推荐）
 
@@ -342,7 +382,7 @@ config.json
 
 ### 访问配置页面
 
-1. 部署完成后，访问 `https://your-domain.com/config`
+1. 部署完成后，访问 `https://your-domain.com/admin`
 2. 上传你的 GitHub App PEM 私钥文件
 3. 在线编辑所有配置项
 4. 点击保存，自动提交到 GitHub
@@ -353,6 +393,11 @@ config.json
 - ✅ 个人资料（头像、姓名、简介）
 - ✅ 背景大标题（中英文）
 - ✅ TypeWriter 动态文字
+- ✅ 打字机效果配置
+  - 故障效果开关
+  - 颜色渐变开关（仅暗色主题）
+  - 故障触发概率（0-100%）
+  - 故障触发间隔（500-5000ms）
 - ✅ 页脚版权信息
 - ✅ 社交链接（GitHub、Gitee、博客、邮箱）及显示/隐藏控制
 - ✅ 技能列表（添加、删除、编辑）
@@ -361,6 +406,8 @@ config.json
   - 时间组件（显示/隐藏）
   - 自定义鼠标指针（开启/关闭、上传 .cur 文件）
 - ✅ 音乐列表管理（上传、删除、排序）
+- ✅ 留言板设置（Waline 集成、启用/禁用）
+- ✅ 友链管理（添加、删除、自动获取网站信息）
 
 ### GitHub App 配置步骤
 
@@ -435,7 +482,7 @@ npm run build
 # 将静态文件上传到任意静态托管服务
 ```
 
----
+***
 
 ## Nginx 反向代理配置
 
@@ -455,13 +502,14 @@ server {
 }
 ```
 
----
+***
 
 ## 常见问题
 
 ### Q: 修改配置后没有生效？
 
 A: 重启开发服务器：
+
 ```bash
 # 停止当前运行的服务（Ctrl+C）
 # 重新启动
@@ -471,12 +519,14 @@ npm run dev
 ### Q: 图片不显示？
 
 A: 检查图片路径是否正确：
+
 - 图片放在 `public/images/` 目录
 - 配置中使用 `/images/xxx.jpg`（注意开头的 `/`）
 
 ### Q: 如何修改端口？
 
 A: 编辑 `.env` 文件：
+
 ```
 PORT=8080
 ```
@@ -484,6 +534,7 @@ PORT=8080
 ### Q: 如何添加新的社交链接？
 
 A: 在 `config.json` 的 `links` 中添加：
+
 ```json
 {
   "links": {
@@ -496,7 +547,7 @@ A: 在 `config.json` 的 `links` 中添加：
 }
 ```
 
----
+***
 
 ## 🐛 问题反馈与建议
 
@@ -507,6 +558,7 @@ A: 在 `config.json` 的 `links` 中添加：
 标题格式：`BUG: xxx`
 
 示例：
+
 - `BUG: 暗色模式下日历显示异常`
 - `BUG: 移动端导航菜单无法关闭`
 
@@ -515,31 +567,24 @@ A: 在 `config.json` 的 `links` 中添加：
 标题格式：`需求: xxx`
 
 示例：
+
 - `需求: 支持更多社交平台链接`
 - `需求: 添加深色/浅色主题自动切换功能`
 
----
+***
 
 ## License
 
 本项目采用 [CC BY-NC-SA 4.0](LICENSE) 许可协议。
 
 **简单来说：**
+
 - ✅ 可以自由分享和修改
 - ❌ **禁止商业用途**
 - 📋 修改后必须使用相同协议
 
 详见 [LICENSE](LICENSE) 文件。
 
----
+***
 
 Made with ❤️ by Amis
-
-=====================使用声明==================
-原作者：<br/>
- https://github.com/AmisKwok/AmisHomepage?tab=readme-ov-file
-使用者：<br/>
- myself<br/>
-是否允许使用： <br/>
- 目前哔哩哔哩上面的原作者允许使用及二次创作（2026.3.17 ）
-==============================================
