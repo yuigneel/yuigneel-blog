@@ -179,7 +179,21 @@
     }
   },
   "projects": {
-    "featured": [],
+    "featured": [
+      {
+        "id": "project-1778241918263-5agf24pfu",
+        "name": "FOR YOURSELF",
+        "description": {
+          "zh": "该项目是FOR-YOURSELF项目生态后端的主项目，主要包含公共模块，网关模块以及账号管理模块。\n该项目目前仅用于学习、展示、毕设以及大型生态项目的Demo，近一年内不会维护和更新。",
+          "en": "This project is the main backend project of the FOR-YOURSELF project ecosystem, primarily including common modules, gateway modules, and account management modules.\nThis project is currently only used for learning, demonstration, graduation projects, and as a Demo for large ecosystem projects. It will not be maintained or updated within the next year."
+        },
+        "url": "https://github.com/yuigneel/for-yourself",
+        "image": "/images/index9.jpg",
+        "tags": [],
+        "icon": "fas fa-star",
+        "gradient": "from-blue-500 to-purple-600"
+      }
+    ],
     "moreProjectsUrl": "https://github.com/AmisKwok"
   },
   "skills": [
