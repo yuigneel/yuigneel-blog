@@ -8,7 +8,7 @@
   "customCursorPath": "/cursors/watermelon.cur",
   "typeWriterEffects": {
     "glitchEffect": true,
-    "colorGradient": false,
+    "colorGradient": true,
     "glitchProbability": 15,
     "glitchInterval": 1500,
     "speedPreset": "custom",
@@ -17,10 +17,10 @@
     "pauseTime": 2000
   },
   "heroTitleEffects": {
-    "hoverPreset": "wobble"
+    "hoverPreset": "strokeFlow"
   },
   "greetings": {
-  "morning": {
+    "morning": {
       "zh": "早！我是伊格尼尔·羽，你可以叫我羽，很高兴认识你！",
       "en": "Morning! I'm Igneel Yu, but you can just call me Yu. Nice to meet ya!"
     },
@@ -153,7 +153,7 @@
     },
     "gitee": {
       "url": "https://github.com/yuigneel",
-      "show": true,
+      "show": false,
       "title": {
         "zh": "Gitee",
         "en": "Gitee"
@@ -417,7 +417,7 @@
     }
   },
   "guestbook": {
-    "enabled": true,
+    "enabled": false,
     "walineUrl": "https://www.amisweb.top",
     "title": {
       "zh": "留言板",
@@ -425,7 +425,7 @@
     }
   },
   "friendLinks": {
-    "enabled": true,
+    "enabled": false,
     "title": {
       "zh": "友链",
       "en": "Friend Links"
