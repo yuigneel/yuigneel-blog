@@ -1,7 +1,7 @@
 {
   "showSkills": true,
   "showProjects": true,
-  "showLocalTime": false,
+  "showLocalTime": true,
   "showGreetings": true,
   "showCustomCursor": false,
   "showEffectsToggle": true,
