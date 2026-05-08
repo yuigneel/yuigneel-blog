@@ -199,6 +199,19 @@
         ],
         "icon": "fas fa-star",
         "gradient": "from-blue-500 to-purple-600"
+      },
+      {
+        "id": "project-1778244272669-7z0rgstnc",
+        "name": "MINI-VISUAL-LAB",
+        "description": {
+          "zh": "项目描述",
+          "en": "Project description"
+        },
+        "url": "https://github.com/yuigneel/mini-visual-lab",
+        "image": "/images/index8.jpg",
+        "tags": [],
+        "icon": "fas fa-star",
+        "gradient": "from-blue-500 to-purple-600"
       }
     ],
     "moreProjectsUrl": "https://github.com/yuigneel"
