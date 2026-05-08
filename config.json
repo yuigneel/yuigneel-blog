@@ -8,7 +8,7 @@
   "customCursorPath": "/cursors/watermelon.cur",
   "typeWriterEffects": {
     "glitchEffect": true,
-    "colorGradient": true,
+    "colorGradient": false,
     "glitchProbability": 15,
     "glitchInterval": 1500,
     "speedPreset": "custom",
@@ -17,7 +17,7 @@
     "pauseTime": 2000
   },
   "heroTitleEffects": {
-    "hoverPreset": "strokeFlow"
+    "hoverPreset": "wobble"
   },
   "greetings": {
     "morning": {
@@ -153,7 +153,7 @@
     },
     "gitee": {
       "url": "https://github.com/yuigneel",
-      "show": false,
+      "show": true,
       "title": {
         "zh": "Gitee",
         "en": "Gitee"
