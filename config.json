@@ -189,12 +189,12 @@
         },
         "url": "https://github.com/yuigneel/for-yourself",
         "image": "/images/index9.jpg",
-        "tags": [],
+        "tags": ["Java", "Spring Boot", "MySQL", "Redis","Maven","微服务"],
         "icon": "fas fa-star",
         "gradient": "from-blue-500 to-purple-600"
       }
     ],
-    "moreProjectsUrl": "https://github.com/AmisKwok"
+    "moreProjectsUrl": "https://github.com/yuigneel"
   },
   "skills": [
     {
