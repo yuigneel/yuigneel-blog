@@ -17,7 +17,7 @@
     "pauseTime": 2000
   },
   "heroTitleEffects": {
-    "hoverPreset": "strokeFlow"
+    "hoverPreset": "bounce"
   },
   "greetings": {
     "morning": {
@@ -189,7 +189,14 @@
         },
         "url": "https://github.com/yuigneel/for-yourself",
         "image": "/images/index9.jpg",
-        "tags": ["Java", "Spring Boot", "MySQL", "Redis","Maven","微服务"],
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Redis",
+          "Maven",
+          "微服务"
+        ],
         "icon": "fas fa-star",
         "gradient": "from-blue-500 to-purple-600"
       }
