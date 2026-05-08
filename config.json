@@ -17,7 +17,7 @@
     "pauseTime": 2000
   },
   "heroTitleEffects": {
-    "hoverPreset": "wobble"
+    "hoverPreset": "strokeFlow"
   },
   "greetings": {
     "morning": {
