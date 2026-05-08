@@ -215,7 +215,7 @@ Currently configured only through the original author's operation guide, with AI
 |         `index.jpg`          | Dark mode background | 1920x1080 |
 |         `index4.jpg`         | Light mode background | 1920x1080 |
 |          `icon.png`          | Website icon  |  512x512  |
-| `index2.jpg` \~ `index9.jpg` | Project display images | 1200x630  |
+| `index2.jpg`、`index3.jpg`、`index5.jpg` \~ `index9.jpg` | Project display images | 1200x630  |
 
 3. **Other Configurations**
 Other configurations such as friend links, music player, guestbook, skills, project descriptions (cover images selected from `index2.jpg` \~ `index9.jpg`, currently does not support **uploading**) can all be modified through the configuration webpage later, without editing code.

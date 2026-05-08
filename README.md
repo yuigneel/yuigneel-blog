@@ -216,7 +216,7 @@
 |         `index.jpg`          | 暗色背景图 | 1920x1080 |
 |         `index4.jpg`         | 亮色背景图 | 1920x1080 |
 |          `icon.png`          | 网站图标  |  512x512  |
-| `index2.jpg` \~ `index9.jpg` | 项目展示图 | 1200x630  |
+| `index2.jpg`、`index3.jpg`、`index5.jpg` \~ `index9.jpg` | 项目展示图 | 1200x630  |
 
 3.**其它配置**
 其它配置如友链、音乐播放器、留言板、技能、项目描述（封面图片从`index2.jpg` \~ `index9.jpg`里面选，暂不支持**上传**
