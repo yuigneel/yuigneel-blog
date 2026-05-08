@@ -204,12 +204,12 @@
         "id": "project-1778244272669-7z0rgstnc",
         "name": "MINI-VISUAL-LAB",
         "description": {
-          "zh": "项目描述",
-          "en": "Project description"
+          "zh": "一些纯前端的项目,用于可视化实验室",
+          "en": "Pure frontend projects for visual experimentation"
         },
         "url": "https://github.com/yuigneel/mini-visual-lab",
         "image": "/images/index8.jpg",
-        "tags": [],
+        "tags": ["JavaScript", "HTML", "CSS", "Vue.js", "Flutter", "Dart"],
         "icon": "fas fa-star",
         "gradient": "from-blue-500 to-purple-600"
       }
