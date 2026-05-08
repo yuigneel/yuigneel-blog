@@ -1,10 +1,10 @@
 {
   "showSkills": true,
   "showProjects": true,
-  "showLocalTime": false,
+  "showLocalTime": true,
   "showGreetings": true,
-  "showCustomCursor": true,
-  "showEffectsToggle": false,
+  "showCustomCursor": false,
+  "showEffectsToggle": true,
   "customCursorPath": "/cursors/watermelon.cur",
   "typeWriterEffects": {
     "glitchEffect": true,
