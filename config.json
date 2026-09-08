@@ -204,8 +204,8 @@
         "id": "project-1778244272669-7z0rgstnc",
         "name": "MINI-VISUAL-LAB",
         "description": {
-          "zh": "一些纯前端的项目,用于可视化实验室",
-          "en": "Pure frontend projects for visual experimentation"
+          "zh": "该项目用于放一些有趣的小脚本，欢迎star和fork！",
+          "en": "This project is used to host some fun little scripts. Stars and forks are welcome!"
         },
         "url": "https://github.com/yuigneel/mini-visual-lab",
         "image": "/images/index8.jpg",
