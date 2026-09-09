@@ -8,6 +8,15 @@
     <a href="README.md">简体中文</a> | 
     <a href="README_EN.md">English</a>
   </p>
+  
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-Next.js_16-black?style=flat-square&logo=next.js" alt="Framework" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-3178c6?style=flat-square&logo=typescript" alt="Language" />
+  <img src="https://img.shields.io/badge/Styling-Tailwind_CSS-38b2ac?style=flat-square&logo=tailwind-css&logoColor=white" alt="Styling" />
+  <img src="https://img.shields.io/badge/Icons-Font_Awesome-339AF0?style=flat-square&logo=font-awesome" alt="Icons" />
+  <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License" />
+</p>
+  
 </div>
 
 ---
