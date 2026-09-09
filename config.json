@@ -1,459 +1,459 @@
 {
-    "showSkills": true,
-    "showProjects": true,
-    "showLocalTime": true,
-    "showGreetings": true,
-    "showCustomCursor": false,
-    "showEffectsToggle": true,
-    "customCursorPath": "/cursors/watermelon.cur",
-    "typeWriterEffects": {
-        "glitchEffect": true,
-        "colorGradient": true,
-        "glitchProbability": 15,
-        "glitchInterval": 1500,
-        "speedPreset": "custom",
-        "typeSpeed": 160,
-        "deleteSpeed": 50,
-        "pauseTime": 2000
+  "showSkills": true,
+  "showProjects": true,
+  "showLocalTime": true,
+  "showGreetings": true,
+  "showCustomCursor": false,
+  "showEffectsToggle": true,
+  "customCursorPath": "/cursors/watermelon.cur",
+  "typeWriterEffects": {
+    "glitchEffect": true,
+    "colorGradient": true,
+    "glitchProbability": 15,
+    "glitchInterval": 1500,
+    "speedPreset": "custom",
+    "typeSpeed": 160,
+    "deleteSpeed": 50,
+    "pauseTime": 2000
+  },
+  "heroTitleEffects": {
+    "hoverPreset": "bounce"
+  },
+  "greetings": {
+    "morning": {
+      "zh": "早！我是伊格尼尔·羽，你可以叫我羽，很高兴认识你！",
+      "en": "Morning! I'm Igneel Yu, but you can just call me Yu. Nice to meet ya!"
     },
-    "heroTitleEffects": {
-        "hoverPreset": "bounce"
+    "afternoon": {
+      "zh": "呦！夕阳可是很美的，偶尔去看看吧！",
+      "en": "Hey there! Sunsets are gorgeous - make sure to catch one sometime!"
     },
-    "greetings": {
-        "morning": {
-            "zh": "早！我是伊格尼尔·羽，你可以叫我羽，很高兴认识你！",
-            "en": "Morning! I'm Igneel Yu, but you can just call me Yu. Nice to meet ya!"
-        },
-        "afternoon": {
-            "zh": "呦！夕阳可是很美的，偶尔去看看吧！",
-            "en": "Hey there! Sunsets are gorgeous - make sure to catch one sometime!"
-        },
-        "evening": {
-            "zh": "晚安！早点睡吧，希望你明天过得愉快，做个好梦！",
-            "en": "Night night! Get some rest, hope you have an awesome day tomorrow and sweet dreams!"
-        }
-    },
-    "site": {
-        "name": "yuigneel's Homepage",
-        "title": "yuigneel's Homepage",
-        "url": "https://yuigneel-blog-nallsyh3i-yuigneels-team.vercel.app/",
-        "ogImage": "/images/index.jpg",
-        "backgroundImage": {
-            "dark": "/images/index.jpg",
-            "light": "/images/index4.jpg"
-        },
-        "textColor": {
-            "dark": "#ffffff",
-            "light": "#1f2937"
-        },
-        "textSecondaryColor": {
-            "dark": "rgba(255, 255, 255, 0.9)",
-            "light": "rgba(31, 41, 55, 0.9)"
-        },
-        "author": "Yu·Igneel",
-        "description": {
-            "zh": "后端开发者 | 热爱编程，追求极致，永不止步。",
-            "en": "Backend Developer | Passionate about coding, pursuing excellence, never stopping."
-        },
-        "keywords": [
-            "yuigneel",
-            "Yu·Igneel",
-            "个人主页",
-            "博客",
-            "技术",
-            "Java",
-            "Spring Boot",
-            "Flutter",
-            "Next.js"
-        ],
-        "footer": {
-            "zh": "© 2026 伊格尼尔·羽的个人主页. All Rights Reserved.",
-            "en": "© 2026 yuigneel's Personal Homepage. All Rights Reserved."
-        }
-    },
-    "profile": {
-        "name": "Yu·Igneel",
-        "avatar": "/images/avatar.jpg",
-        "location": {
-            "zh": "中国 🇨🇳",
-            "en": "China 🇨🇳"
-        },
-        "focus": {
-            "zh": "后端 & 数据采集",
-            "en": "Backend & Data Collection"
-        },
-        "hobbies": {
-            "zh": "编程、学习、开源",
-            "en": "Coding, Learning, Open Source"
-        },
-        "motto": {
-            "zh": "顺其自然",
-            "en": "In nature, I am"
-        },
-        "typeWriterTexts": {
-            "zh": [
-                "你好代码，你好世界",
-                "记录生活，分享技术，追求极致，永不止步"
-            ],
-            "en": [
-                "Hello Code, Hello World",
-                "Record life, share technology, pursuing excellence, never stopping"
-            ]
-        },
-        "currentFocus": [
-            {
-                "icon": "fas fa-satellite text-blue-400",
-                "text": {
-                    "zh": "正在专注于后端服务与数据采集",
-                    "en": "Working on Backend Services & Data Collection"
-                }
-            },
-            {
-                "icon": "fas fa-seedling text-green-400",
-                "text": {
-                    "zh": "正在学习云原生与微服务架构",
-                    "en": "Learning Cloud Native & Microservices"
-                }
-            },
-            {
-                "icon": "fas fa-comments text-yellow-400",
-                "text": {
-                    "zh": "欢迎交流 Java、Flutter、后端开发",
-                    "en": "Ask me about Java, Flutter, Backend Dev"
-                }
-            }
-        ]
-    },
-    "links": {
-        "blog": {
-            "url": "https://space.bilibili.com/1324161511?spm_id_from=333.1007.0.0",
-            "show": true,
-            "title": {
-                "zh": "逆羽风辰'的博客",
-                "en": "yuigneel's Blog"
-            },
-            "description": {
-                "zh": "记录技术文章和生活感悟",
-                "en": "Technical articles and life insights"
-            },
-            "icon": "fas fa-blog"
-        },
-        "github": {
-            "url": "https://github.com/yuigneel",
-            "show": true,
-            "title": {
-                "zh": "GitHub",
-                "en": "GitHub"
-            },
-            "description": {
-                "zh": "开源项目和代码仓库",
-                "en": "Open source projects and code repositories"
-            },
-            "icon": "fab fa-github"
-        },
-        "gitee": {
-            "url": "https://github.com/yuigneel",
-            "show": false,
-            "title": {
-                "zh": "Gitee",
-                "en": "Gitee"
-            },
-            "description": {
-                "zh": "国内代码托管平台",
-                "en": "Domestic code hosting platform"
-            },
-            "icon": "fas fa-code-branch"
-        },
-        "email": {
-            "url": "yuigneel@outlook.com",
-            "show": true,
-            "title": {
-                "zh": "邮箱",
-                "en": "Email"
-            },
-            "icon": "fas fa-envelope",
-            "description": {
-                "zh": "邮箱",
-                "en": "Email"
-            }
-        }
-    },
-    "projects": {
-        "featured": [
-            {
-                "id": "project-1778241918263-5agf24pfu",
-                "name": "FOR YOURSELF",
-                "description": {
-                    "zh": "该项目是FOR-YOURSELF项目生态后端的主项目，主要包含公共模块，网关模块以及账号管理模块。\n该项目目前仅用于学习、展示、毕设以及大型生态项目的Demo，近一年内不会维护和更新。",
-                    "en": "This project is the main backend project of the FOR-YOURSELF project ecosystem, primarily including common modules, gateway modules, and account management modules.\nThis project is currently only used for learning, demonstration, graduation projects, and as a Demo for large ecosystem projects. It will not be maintained or updated within the next year."
-                },
-                "url": "https://github.com/yuigneel/for-yourself",
-                "image": "/images/index9.jpg",
-                "tags": [
-                    "Java",
-                    "Spring Boot",
-                    "MySQL",
-                    "Redis",
-                    "Maven",
-                    "微服务"
-                ],
-                "icon": "fas fa-star",
-                "gradient": "from-blue-500 to-purple-600"
-            },
-            {
-                "id": "project-1778244272669-7z0rgstnc",
-                "name": "MINI-VISUAL-LAB",
-                "description": {
-                    "zh": "该项目用于放一些有趣的小脚本，欢迎star和fork！",
-                    "en": "This project is used to host some fun little scripts. Stars and forks are welcome!"
-                },
-                "url": "https://github.com/yuigneel/mini-visual-lab",
-                "image": "/images/index8.jpg",
-                "tags": [
-                    "JavaScript",
-                    "HTML",
-                    "CSS",
-                    "Vue.js",
-                    "Flutter",
-                    "Dart"
-                ],
-                "icon": "fas fa-star",
-                "gradient": "from-blue-500 to-purple-600"
-            }
-        ],
-        "moreProjectsUrl": "https://github.com/yuigneel"
-    },
-    "skills": [
-        {
-            "name": "Java",
-            "level": 80,
-            "color": "from-orange-500 to-red-500",
-            "icon": "fab fa-java"
-        },
-        {
-            "name": "Spring Boot",
-            "level": 55,
-            "color": "from-green-500 to-emerald-600",
-            "icon": "fas fa-leaf"
-        },
-        {
-            "name": "MySQL",
-            "level": 30,
-            "color": "from-blue-600 to-blue-800",
-            "icon": "fas fa-database"
-        },
-        {
-            "name": "Redis",
-            "level": 30,
-            "color": "from-red-500 to-red-700",
-            "icon": "fas fa-bolt"
-        },
-        {
-            "name": "Spring Cloud",
-            "level": 50,
-            "color": "from-blue-500 to-purple-600",
-            "icon": "fas fa-star"
-        },
-        {
-            "name": "Python",
-            "level": 20,
-            "color": "from-blue-500 to-purple-600",
-            "icon": "fas fa-star"
-        }
-    ],
-    "techStack": {
-        "backend": [
-            {
-                "name": "Java",
-                "color": "bg-orange-500",
-                "icon": "fab fa-java"
-            },
-            {
-                "name": "Spring Boot",
-                "color": "bg-green-600",
-                "icon": "fas fa-leaf"
-            },
-            {
-                "name": "MySQL",
-                "color": "bg-blue-600",
-                "icon": "fas fa-database"
-            },
-            {
-                "name": "Redis",
-                "color": "bg-red-500",
-                "icon": "fas fa-bolt"
-            }
-        ],
-        "mobile": [
-            {
-                "name": "Flutter",
-                "color": "bg-blue-500",
-                "icon": "fas fa-mobile-alt"
-            },
-            {
-                "name": "Dart",
-                "color": "bg-blue-700",
-                "icon": "fas fa-code"
-            },
-            {
-                "name": "Android",
-                "color": "bg-green-500",
-                "icon": "fab fa-android"
-            }
-        ],
-        "frontend": [
-            {
-                "name": "Next.js",
-                "color": "bg-gray-800",
-                "icon": "fas fa-bolt"
-            },
-            {
-                "name": "TypeScript",
-                "color": "bg-blue-600",
-                "icon": "fab fa-js"
-            },
-            {
-                "name": "React",
-                "color": "bg-cyan-500",
-                "icon": "fab fa-react"
-            }
-        ]
-    },
-    "translations": {
-        "zh": {
-            "siteTitle": "逆羽风辰的主页",
-            "quickLinks": "快速链接",
-            "aboutMe": "关于我",
-            "techStack": "技术栈",
-            "backend": "后端",
-            "mobile": "移动端",
-            "frontend": "前端",
-            "currentFocus": "当前关注",
-            "featuredProjects": "精选项目",
-            "skills": "技能",
-            "viewProject": "查看项目",
-            "moreProjects": "更多项目",
-            "guestbook": "留言板",
-            "friendLinks": "友链",
-            "visitSite": "访问网站",
-            "noFriendLinks": "暂无友链",
-            "addFriendLink": "添加友链",
-            "friendLinkUrl": "网站地址",
-            "friendLinkName": "网站名称",
-            "friendLinkAvatar": "网站图标",
-            "friendLinkDescription": "网站描述",
-            "fetchSiteInfo": "获取网站信息",
-            "fetchingSiteInfo": "正在获取网站信息...",
-            "fetchSiteInfoSuccess": "网站信息获取成功",
-            "fetchSiteInfoFailed": "网站信息获取失败，请手动填写"
-        },
-        "en": {
-            "siteTitle": "yuigneel's Homepage",
-            "quickLinks": "Quick Links",
-            "aboutMe": "About Me",
-            "techStack": "Tech Stack",
-            "backend": "Backend",
-            "mobile": "Mobile",
-            "frontend": "Frontend",
-            "currentFocus": "Current Focus",
-            "featuredProjects": "My Projects",
-            "skills": "Skills",
-            "viewProject": "View Project",
-            "moreProjects": "More Projects",
-            "guestbook": "Guestbook",
-            "friendLinks": "Friend Links",
-            "visitSite": "Visit Site",
-            "noFriendLinks": "No friend links yet",
-            "addFriendLink": "Add Friend Link",
-            "friendLinkUrl": "Website URL",
-            "friendLinkName": "Website Name",
-            "friendLinkAvatar": "Website Icon",
-            "friendLinkDescription": "Website Description",
-            "fetchSiteInfo": "Fetch Site Info",
-            "fetchingSiteInfo": "Fetching site info...",
-            "fetchSiteInfoSuccess": "Site info fetched successfully",
-            "fetchSiteInfoFailed": "Failed to fetch site info, please fill manually"
-        }
-    },
-    "guestbook": {
-        "enabled": false,
-        "walineUrl": "https://www.amisweb.top",
-        "title": {
-            "zh": "留言板",
-            "en": "Guestbook"
-        }
-    },
-    "friendLinks": {
-        "enabled": false,
-        "title": {
-            "zh": "友链",
-            "en": "Friend Links"
-        },
-        "links": [
-            {
-                "id": "friend-1774035561159-13fhqw0v3",
-                "url": "https://yuigneel-blog.vercel.app",
-                "name": "yuigneel's Blog",
-                "avatar": "https://avatars.githubusercontent.com/u/202588416?s=400&u=baab8feb9dfc2e334858b649c91045a1be6f39f5&v=4",
-                "description": {
-                    "zh": "yuigneel 的个人博客，记录开发、探索、笔记。 更新代码仓库。",
-                    "en": "yuigneel 的个人博客，记录开发、探索、笔记。 更新代码仓库。"
-                }
-            },
-            {
-                "id": "friend-1774194093621-ntu33qr5h",
-                "url": "https://suko.online",
-                "name": "Homo Faber",
-                "avatar": "https://suko.online/favicon.png",
-                "description": {
-                    "zh": "gesiiss的个人博客",
-                    "en": "gesiiss的个人博客"
-                }
-            },
-            {
-                "id": "friend-1774194894718-axhj6nutt",
-                "url": "https://blog.hesuisui.top/",
-                "name": "许家大院 - 尝尝酒酒，瓶瓶安安。",
-                "avatar": "https://blog.hesuisui.top/upload/222141nc05bz5jvq5vd51k.jpg",
-                "description": {
-                    "zh": "许家大院-和岁岁",
-                    "en": "许家大院-和岁岁"
-                }
-            },
-            {
-                "id": "friend-1774634351991-887prk1uz",
-                "url": "https://www.guirlan.de",
-                "name": "小岚的杂物间",
-                "avatar": "https://www.guirlan.de/favicon.ico",
-                "description": {
-                    "zh": "这里是岚天呀的小窝，记载了我捣鼓各种东西时产生的奇思妙想。",
-                    "en": "这里是岚天呀的小窝，记载了我捣鼓各种东西时产生的奇思妙想。"
-                }
-            },
-            {
-                "id": "friend-1775191353142-y9myu1xuj",
-                "url": "https://llds.cloud/",
-                "name": "LsAng",
-                "avatar": "https://llds.cloud/lsang.png",
-                "description": {
-                    "zh": "学习、探索中",
-                    "en": "学习、探索中"
-                }
-            }
-        ]
-    },
-    "musicOrder": {
-        "飞松.mp3": 0,
-        "忘记了也没关系.mp3": 1,
-        "光逝去的夏天——合唱.mp3": 2,
-        "灰与幻想的格林姆迦尔.mp3": 3,
-        "ささくれ.mp3": 4,
-        "嘘.mp3": 5,
-        "追光者.mp3": 6,
-        "传说之下---His Theme.mp3": 7,
-        "Just Say Hello.mp3": 8,
-        "FLY HIGH ！！.mp3": 9,
-        "柚木家的四兄弟.mp3": 10,
-        "Recollet.mp3": 11
+    "evening": {
+      "zh": "晚安！早点睡吧，希望你明天过得愉快，做个好梦！",
+      "en": "Night night! Get some rest, hope you have an awesome day tomorrow and sweet dreams!"
     }
+  },
+  "site": {
+    "name": "yuigneel's Homepage",
+    "title": "yuigneel's Homepage",
+    "url": "https://yuigneel-blog-nallsyh3i-yuigneels-team.vercel.app/",
+    "ogImage": "/images/index.jpg",
+    "backgroundImage": {
+      "dark": "/images/index.jpg",
+      "light": "/images/index4.jpg"
+    },
+    "textColor": {
+      "dark": "#ffffff",
+      "light": "#1f2937"
+    },
+    "textSecondaryColor": {
+      "dark": "rgba(255, 255, 255, 0.9)",
+      "light": "rgba(31, 41, 55, 0.9)"
+    },
+    "author": "Yu·Igneel",
+    "description": {
+      "zh": "后端开发者 | 热爱编程，追求极致，永不止步。",
+      "en": "Backend Developer | Passionate about coding, pursuing excellence, never stopping."
+    },
+    "keywords": [
+      "yuigneel",
+      "Yu·Igneel",
+      "个人主页",
+      "博客",
+      "技术",
+      "Java",
+      "Spring Boot",
+      "Flutter",
+      "Next.js"
+    ],
+    "footer": {
+      "zh": "© 2026 伊格尼尔·羽的个人主页. All Rights Reserved.",
+      "en": "© 2026 yuigneel's Personal Homepage. All Rights Reserved."
+    }
+  },
+  "profile": {
+    "name": "Yu·Igneel",
+    "avatar": "/images/avatar.jpg",
+    "location": {
+      "zh": "中国 🇨🇳",
+      "en": "China 🇨🇳"
+    },
+    "focus": {
+      "zh": "后端 & 数据采集",
+      "en": "Backend & Data Collection"
+    },
+    "hobbies": {
+      "zh": "编程、学习、开源",
+      "en": "Coding, Learning, Open Source"
+    },
+    "motto": {
+      "zh": "顺其自然",
+      "en": "In nature, I am"
+    },
+    "typeWriterTexts": {
+      "zh": [
+        "你好代码，你好世界",
+        "记录生活，分享技术，追求极致，永不止步"
+      ],
+      "en": [
+        "Hello Code, Hello World",
+        "Record life, share technology, pursuing excellence, never stopping"
+      ]
+    },
+    "currentFocus": [
+      {
+        "icon": "fas fa-satellite text-blue-400",
+        "text": {
+          "zh": "正在专注于后端服务与数据采集",
+          "en": "Working on Backend Services & Data Collection"
+        }
+      },
+      {
+        "icon": "fas fa-seedling text-green-400",
+        "text": {
+          "zh": "正在学习云原生与微服务架构",
+          "en": "Learning Cloud Native & Microservices"
+        }
+      },
+      {
+        "icon": "fas fa-comments text-yellow-400",
+        "text": {
+          "zh": "欢迎交流 Java、Flutter、后端开发",
+          "en": "Ask me about Java, Flutter, Backend Dev"
+        }
+      }
+    ]
+  },
+  "links": {
+    "blog": {
+      "url": "https://space.bilibili.com/1324161511?spm_id_from=333.1007.0.0",
+      "show": true,
+      "title": {
+        "zh": "逆羽风辰'的博客",
+        "en": "yuigneel's Blog"
+      },
+      "description": {
+        "zh": "记录技术文章和生活感悟",
+        "en": "Technical articles and life insights"
+      },
+      "icon": "fas fa-blog"
+    },
+    "github": {
+      "url": "https://github.com/yuigneel",
+      "show": true,
+      "title": {
+        "zh": "GitHub",
+        "en": "GitHub"
+      },
+      "description": {
+        "zh": "开源项目和代码仓库",
+        "en": "Open source projects and code repositories"
+      },
+      "icon": "fab fa-github"
+    },
+    "gitee": {
+      "url": "https://github.com/yuigneel",
+      "show": false,
+      "title": {
+        "zh": "Gitee",
+        "en": "Gitee"
+      },
+      "description": {
+        "zh": "国内代码托管平台",
+        "en": "Domestic code hosting platform"
+      },
+      "icon": "fas fa-code-branch"
+    },
+    "email": {
+      "url": "mailto:yuigneel@outlook.com?subject=你好&body=我想和你联系",
+      "show": true,
+      "title": {
+        "zh": "邮箱",
+        "en": "Email"
+      },
+      "icon": "fas fa-envelope",
+      "description": {
+        "zh": "邮箱",
+        "en": "Email"
+      }
+    }
+  },
+  "projects": {
+    "featured": [
+      {
+        "id": "project-1778241918263-5agf24pfu",
+        "name": "FOR YOURSELF",
+        "description": {
+          "zh": "该项目是FOR-YOURSELF项目生态后端的主项目，主要包含公共模块，网关模块以及账号管理模块。\n该项目目前仅用于学习、展示、毕设以及大型生态项目的Demo，近一年内不会维护和更新。",
+          "en": "This project is the main backend project of the FOR-YOURSELF project ecosystem, primarily including common modules, gateway modules, and account management modules.\nThis project is currently only used for learning, demonstration, graduation projects, and as a Demo for large ecosystem projects. It will not be maintained or updated within the next year."
+        },
+        "url": "https://github.com/yuigneel/for-yourself",
+        "image": "/images/index9.jpg",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Redis",
+          "Maven",
+          "微服务"
+        ],
+        "icon": "fas fa-star",
+        "gradient": "from-blue-500 to-purple-600"
+      },
+      {
+        "id": "project-1778244272669-7z0rgstnc",
+        "name": "MINI-VISUAL-LAB",
+        "description": {
+          "zh": "该项目用于放一些有趣的小脚本，欢迎star和fork！",
+          "en": "This project is used to host some fun little scripts. Stars and forks are welcome!"
+        },
+        "url": "https://github.com/yuigneel/mini-visual-lab",
+        "image": "/images/index8.jpg",
+        "tags": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Vue.js",
+          "Flutter",
+          "Dart"
+        ],
+        "icon": "fas fa-star",
+        "gradient": "from-blue-500 to-purple-600"
+      }
+    ],
+    "moreProjectsUrl": "https://github.com/yuigneel"
+  },
+  "skills": [
+    {
+      "name": "Java",
+      "level": 80,
+      "color": "from-orange-500 to-red-500",
+      "icon": "fab fa-java"
+    },
+    {
+      "name": "Spring Boot",
+      "level": 55,
+      "color": "from-green-500 to-emerald-600",
+      "icon": "fas fa-leaf"
+    },
+    {
+      "name": "MySQL",
+      "level": 30,
+      "color": "from-blue-600 to-blue-800",
+      "icon": "fas fa-database"
+    },
+    {
+      "name": "Redis",
+      "level": 30,
+      "color": "from-red-500 to-red-700",
+      "icon": "fas fa-bolt"
+    },
+    {
+      "name": "Spring Cloud",
+      "level": 50,
+      "color": "from-blue-500 to-purple-600",
+      "icon": "fas fa-star"
+    },
+    {
+      "name": "Python",
+      "level": 20,
+      "color": "from-blue-500 to-purple-600",
+      "icon": "fas fa-star"
+    }
+  ],
+  "techStack": {
+    "backend": [
+      {
+        "name": "Java",
+        "color": "bg-orange-500",
+        "icon": "fab fa-java"
+      },
+      {
+        "name": "Spring Boot",
+        "color": "bg-green-600",
+        "icon": "fas fa-leaf"
+      },
+      {
+        "name": "MySQL",
+        "color": "bg-blue-600",
+        "icon": "fas fa-database"
+      },
+      {
+        "name": "Redis",
+        "color": "bg-red-500",
+        "icon": "fas fa-bolt"
+      }
+    ],
+    "mobile": [
+      {
+        "name": "Flutter",
+        "color": "bg-blue-500",
+        "icon": "fas fa-mobile-alt"
+      },
+      {
+        "name": "Dart",
+        "color": "bg-blue-700",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "Android",
+        "color": "bg-green-500",
+        "icon": "fab fa-android"
+      }
+    ],
+    "frontend": [
+      {
+        "name": "Next.js",
+        "color": "bg-gray-800",
+        "icon": "fas fa-bolt"
+      },
+      {
+        "name": "TypeScript",
+        "color": "bg-blue-600",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "React",
+        "color": "bg-cyan-500",
+        "icon": "fab fa-react"
+      }
+    ]
+  },
+  "translations": {
+    "zh": {
+      "siteTitle": "逆羽风辰的主页",
+      "quickLinks": "快速链接",
+      "aboutMe": "关于我",
+      "techStack": "技术栈",
+      "backend": "后端",
+      "mobile": "移动端",
+      "frontend": "前端",
+      "currentFocus": "当前关注",
+      "featuredProjects": "精选项目",
+      "skills": "技能",
+      "viewProject": "查看项目",
+      "moreProjects": "更多项目",
+      "guestbook": "留言板",
+      "friendLinks": "友链",
+      "visitSite": "访问网站",
+      "noFriendLinks": "暂无友链",
+      "addFriendLink": "添加友链",
+      "friendLinkUrl": "网站地址",
+      "friendLinkName": "网站名称",
+      "friendLinkAvatar": "网站图标",
+      "friendLinkDescription": "网站描述",
+      "fetchSiteInfo": "获取网站信息",
+      "fetchingSiteInfo": "正在获取网站信息...",
+      "fetchSiteInfoSuccess": "网站信息获取成功",
+      "fetchSiteInfoFailed": "网站信息获取失败，请手动填写"
+    },
+    "en": {
+      "siteTitle": "yuigneel's Homepage",
+      "quickLinks": "Quick Links",
+      "aboutMe": "About Me",
+      "techStack": "Tech Stack",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "frontend": "Frontend",
+      "currentFocus": "Current Focus",
+      "featuredProjects": "My Projects",
+      "skills": "Skills",
+      "viewProject": "View Project",
+      "moreProjects": "More Projects",
+      "guestbook": "Guestbook",
+      "friendLinks": "Friend Links",
+      "visitSite": "Visit Site",
+      "noFriendLinks": "No friend links yet",
+      "addFriendLink": "Add Friend Link",
+      "friendLinkUrl": "Website URL",
+      "friendLinkName": "Website Name",
+      "friendLinkAvatar": "Website Icon",
+      "friendLinkDescription": "Website Description",
+      "fetchSiteInfo": "Fetch Site Info",
+      "fetchingSiteInfo": "Fetching site info...",
+      "fetchSiteInfoSuccess": "Site info fetched successfully",
+      "fetchSiteInfoFailed": "Failed to fetch site info, please fill manually"
+    }
+  },
+  "guestbook": {
+    "enabled": false,
+    "walineUrl": "https://www.amisweb.top",
+    "title": {
+      "zh": "留言板",
+      "en": "Guestbook"
+    }
+  },
+  "friendLinks": {
+    "enabled": false,
+    "title": {
+      "zh": "友链",
+      "en": "Friend Links"
+    },
+    "links": [
+      {
+        "id": "friend-1774035561159-13fhqw0v3",
+        "url": "https://yuigneel-blog.vercel.app",
+        "name": "yuigneel's Blog",
+        "avatar": "https://avatars.githubusercontent.com/u/202588416?s=400&u=baab8feb9dfc2e334858b649c91045a1be6f39f5&v=4",
+        "description": {
+          "zh": "yuigneel 的个人博客，记录开发、探索、笔记。 更新代码仓库。",
+          "en": "yuigneel 的个人博客，记录开发、探索、笔记。 更新代码仓库。"
+        }
+      },
+      {
+        "id": "friend-1774194093621-ntu33qr5h",
+        "url": "https://suko.online",
+        "name": "Homo Faber",
+        "avatar": "https://suko.online/favicon.png",
+        "description": {
+          "zh": "gesiiss的个人博客",
+          "en": "gesiiss的个人博客"
+        }
+      },
+      {
+        "id": "friend-1774194894718-axhj6nutt",
+        "url": "https://blog.hesuisui.top/",
+        "name": "许家大院 - 尝尝酒酒，瓶瓶安安。",
+        "avatar": "https://blog.hesuisui.top/upload/222141nc05bz5jvq5vd51k.jpg",
+        "description": {
+          "zh": "许家大院-和岁岁",
+          "en": "许家大院-和岁岁"
+        }
+      },
+      {
+        "id": "friend-1774634351991-887prk1uz",
+        "url": "https://www.guirlan.de",
+        "name": "小岚的杂物间",
+        "avatar": "https://www.guirlan.de/favicon.ico",
+        "description": {
+          "zh": "这里是岚天呀的小窝，记载了我捣鼓各种东西时产生的奇思妙想。",
+          "en": "这里是岚天呀的小窝，记载了我捣鼓各种东西时产生的奇思妙想。"
+        }
+      },
+      {
+        "id": "friend-1775191353142-y9myu1xuj",
+        "url": "https://llds.cloud/",
+        "name": "LsAng",
+        "avatar": "https://llds.cloud/lsang.png",
+        "description": {
+          "zh": "学习、探索中",
+          "en": "学习、探索中"
+        }
+      }
+    ]
+  },
+  "musicOrder": {
+    "飞松.mp3": 0,
+    "忘记了也没关系.mp3": 1,
+    "光逝去的夏天——合唱.mp3": 2,
+    "灰与幻想的格林姆迦尔.mp3": 3,
+    "ささくれ.mp3": 4,
+    "嘘.mp3": 5,
+    "追光者.mp3": 6,
+    "传说之下---His Theme.mp3": 7,
+    "Just Say Hello.mp3": 8,
+    "FLY HIGH ！！.mp3": 9,
+    "柚木家的四兄弟.mp3": 10,
+    "Recollet.mp3": 11
+  }
 }
